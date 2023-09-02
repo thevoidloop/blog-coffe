@@ -1,0 +1,52 @@
+.contenido-principal, main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    padding-left: 9.375rem;  
+    padding-right: 9.375rem;  
+}
+
+img, article p {
+    text-align: justify;
+    align-self: center;
+    margin: 1.25rem;  
+}
+
+img {
+    width: 31.25rem;  
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media only screen and (max-width: 48rem) {  
+
+    article {
+        flex-direction: column;  /* Cambia a una sola columna */
+        padding-left: 1.25rem;  /* Reduzca el padding */
+        padding-right: 1.25rem;  /* Reduzca el padding */
+    }
+
+    img {
+        width: 100%;  /* Ajusta la imagen al 100% del contenedor */
+        max-width: 31.25rem;  /* pero no más de 500px de ancho */
+    }
+
+    img, article p {
+        margin: 0.625rem;  /* Reduce el margen */
+    }
+    
+        h3 {
+            font-size: 2em;  /* Reduce el tamaño de fuente */
+        }
+    }
+    
